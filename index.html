@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydra - Network Logon Cracker</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif; /* استایل قدیمی */
+            background-color: #ffffff;
+            color: #000000;
+            line-height: 1.6;
+            margin: 40px;
+        }
+        header {
+            border-bottom: 2px solid #000;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0;
+        }
+        nav {
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+        nav a {
+            margin-right: 15px;
+            color: blue;
+            text-decoration: underline;
+        }
+        .content-box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        code {
+            background-color: #eeeeee;
+            padding: 2px 5px;
+            font-family: "Courier New", Courier, monospace;
+        }
+        .usage-box {
+            background-color: #000;
+            color: #00ff00; /* سبز ترمینالی برای بخش مثال‌ها */
+            padding: 15px;
+            font-family: "Courier New", Courier, monospace;
+            margin: 20px 0;
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 0.8em;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Hydra Project</h1>
+    <p><i>High-speed, parallelized login cracker</i></p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#usage">Usage</a>
+    <a href="#protocols">Protocols</a>
+    <a href="#download">Download</a>
+</nav>
+
+<section id="about">
+    <h2>About Hydra</h2>
+    <p>Hydra is a very fast network logon cracker which supports many protocols. It is designed to be used for security auditing and penetration testing purposes.</p>
+</section>
+
+<section id="usage">
+    <h2>Usage Examples</h2>
+    <div class="usage-box">
+        # Basic SSH attack<br>
+        hydra -l admin -P passlist.txt ssh://192.168.1.1<br><br>
+        # HTTP-GET attack<br>
+        hydra -l user -P passwords.txt 10.0.0.5 http-get /login.php
+    </div>
+</section>
+
+<section id="protocols">
+    <h2>Supported Protocols</h2>
+    <ul>
+        <li><strong>SSH:</strong> Secure Shell</li>
+        <li><strong>FTP:</strong> File Transfer Protocol</li>
+        <li><strong>HTTP-GET/POST:</strong> Web authentication</li>
+        <li><strong>Telnet:</strong> Remote login</li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2026 Hydra Project - Documentation inspired by Nmap style.</p>
+</footer>
+
+</body>
+</html>
